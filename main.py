@@ -4,6 +4,7 @@ from chain_programming_language import chain_programming_language
 from chain_development_area import chain_development_area
 from chain_interview_preparation import chain_interview_preparation
 from chain_study_resources import chain_study_resources
+from chain_general_topics import chain_general_topics
 from operator import itemgetter
 
 def classify_route(input: dict):
@@ -25,9 +26,11 @@ def classify_route(input: dict):
             return chain_study_resources
         case _:
             print(f">> Escolha Pydantic = {option} (Tópicos Gerais)\n")
+            return chain_general_topics
+            
 
 chain = RunnableParallel({"input": itemgetter("input"), "option": chain_classifier}) | RunnableLambda(classify_route)
 
-result = chain.invoke({"input":"Quero dicas para aprimorar meus estudos."})
+result = chain.invoke({"input":"Quais assuntos estão em alta em 2026 e que serão usados nos próximos anos?"})
 
 print(result)
