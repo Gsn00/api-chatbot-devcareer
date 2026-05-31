@@ -15,11 +15,11 @@ Instruções:
 Analise a query do usuário e o histórico da conversa para entender o contexto completo.
 
 Classifique a query em uma das seguintes categorias:
-1: Se a pergunta for sobre aprender uma linguagem específica (ex: Python, JavaScript, Go, Rust), frameworks relacionados a linguagens (ex: React, Angular, Spring Boot), ou como iniciar em uma linguagem.
+1: Se a pergunta for diretamente sobre aprender uma linguagem específica (ex: Python, JavaScript, Go, Rust), frameworks relacionados a linguagens (ex: React, Angular, Spring Boot), ou como iniciar em uma linguagem.
 2: Se a pergunta for sobre uma área de atuação (ex: Front-end, Back-end, DevOps, Data Science, Mobile, QA), suas responsabilidades, tecnologias ou como migrar para ela.
-3: Se a pergunta for sobre dicas de currículo, portfólio, preparação para entrevistas técnicas, soft skills para entrevistas, ou simulações.
-4: Se a pergunta for sobre onde estudar (cursos, livros, plataformas), comunidades, certificações ou métodos de estudo.
-5: Para qualquer outra pergunta que não se encaixe nas categorias acima, ou perguntas mais amplas sobre o mercado de trabalho, tendências, ou dúvidas gerais.
+3: Se a pergunta for especificamente sobre o processo seletivo, como dicas de currículo, portfólio para entrevista, preparação para entrevistas técnicas, soft skills para entrevistas, ou simulações de entrevista. Foco em 'como se sair bem em um processo de seleção'.
+4: Se a pergunta for sobre onde ou como estudar de forma geral, como sugestões de cursos, livros, plataformas de aprendizado, comunidades, certificações, métodos de estudo ou técnicas para aprimorar o aprendizado. Foco em 'ferramentas e métodos para aprender'.
+5: Para qualquer outra pergunta que não se encaixe perfeitamente nas categorias acima, ou perguntas mais amplas sobre o mercado de trabalho, tendências, ou dúvidas gerais.
 
 \n{format_instructions}\n
 Pergunta do usuário: {input}
